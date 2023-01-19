@@ -213,8 +213,8 @@ main {
         }
     }
     .card-premios {
-        height: 10rem;
-        width: 10rem;
+        height: 20rem;
+        width: 15rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -225,6 +225,11 @@ main {
             p {
                 color: white;
                 text-align: center;
+                @include regular();
+                font-size: 2rem;
+                &:first-of-type{
+                    color:#3AE67A;
+                }
             }
         }
         & > div:last-of-type {
@@ -234,8 +239,16 @@ main {
             background-position: center;
             background-repeat: no-repeat;
             background-size: contain;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: column;
+            padding-top: 2.5rem;
             p {
                 text-align: center;
+                color:white;
+                @include regular();
+                font-size: 1.5rem;
             }
         }
     }

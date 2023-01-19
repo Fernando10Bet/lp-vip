@@ -200,8 +200,8 @@ main {
   max-width: 1200px;
 }
 #premios .card-premios {
-  height: 10rem;
-  width: 10rem;
+  height: 20rem;
+  width: 15rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -214,6 +214,11 @@ main {
 #premios .card-premios > div:first-of-type p {
   color: white;
   text-align: center;
+  font-family: "walsheim-regular";
+  font-size: 2rem;
+}
+#premios .card-premios > div:first-of-type p:first-of-type {
+  color: #3AE67A;
 }
 #premios .card-premios > div:last-of-type {
   height: 70%;
@@ -222,9 +227,17 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 2.5rem;
 }
 #premios .card-premios > div:last-of-type p {
   text-align: center;
+  color: white;
+  font-family: "walsheim-regular";
+  font-size: 1.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
